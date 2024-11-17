@@ -1,0 +1,117 @@
+.home-container {
+    height: auto;
+    background-image: url('img.jpg'); /* Reemplaza con la ruta correcta si está en otra carpeta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 30px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    position: relative; /* Para usar el overlay */
+    overflow: hidden;
+}
+
+/* Overlay de color semitransparente */
+.home-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    z-index: 1; /* Deja el overlay debajo del contenido */
+    pointer-events: none; /* Permite interactuar con el contenido */
+}
+
+.home-title {
+    height: 40%;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.home-title h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.home-info {
+    height: 60%;
+    background-color: rgba(192, 228, 217, 0.9);
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(108, 96, 96, 0.15);
+    position: relative;
+    z-index: 2;
+}
+
+.home-info h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+.home-info p {
+    font-size: 17px;
+    font-weight: 500;
+    color: #0e0b0b;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.list-info {
+    color: #0f0808;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.list-info li {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #9cd6a6;
+    transition: color 0.3s ease;
+}
+
+.list-info li:hover {
+    color: #e74c3c;
+}
+
+@media screen and (min-width: 1024px) {
+    .home-container {
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin: auto 20px;
+    }
+
+    .home-title h1 {
+        font-size: 60px;
+        font-weight: 600;
+    }
+
+    .home-info {
+        height: 75%;
+        padding-top: 30px;
+        margin-right: 35px;
+    }
+
+    .list-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: left;
+    }
+}

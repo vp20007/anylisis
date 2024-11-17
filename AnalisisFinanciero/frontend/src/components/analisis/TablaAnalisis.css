@@ -1,0 +1,18 @@
+/* Bordes suaves y sombra sutil para la tabla */
+#analisis {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  #analisis th, #analisis td {
+    padding: 12px;
+  }
+  
+  /* Estilo para el botón */
+  button {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  

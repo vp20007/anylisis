@@ -1,0 +1,25 @@
+.opciones-grafico {
+  background: linear-gradient(135deg, #051614, #051614); /* Fondo degradado de azul oscuro */
+  border-radius: 30px;
+  border: 1px solid #ffffff;
+  color: #e5e8ec; /* Color de texto claro */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de profundidad */
+  transition: transform 0.3s ease;
+}
+
+.opciones-grafico:hover {
+  transform: scale(1.02); /* Pequeña animación de agrandamiento al pasar el cursor */
+}
+
+.izquierda {
+  text-align: left;
+  color: #000000; /* Color suave y complementario */
+  font-weight: 600;
+}
+
+.derecha {
+  text-align: right;
+  color: #000000; /* Color acentuado y moderno */
+  font-weight: 600;
+}

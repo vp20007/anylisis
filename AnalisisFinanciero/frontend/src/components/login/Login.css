@@ -1,0 +1,48 @@
+/* Barra de menú superior */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo más suave */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    z-index: 1000; /* Asegura que la barra quede encima del contenido */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Color de texto oscuro pero elegante */
+  }
+  
+  .navbar .menu {
+    display: flex;
+  }
+  
+  .navbar .menu a {
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 18px;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar .menu a:hover {
+    background-color: #e0e0e0; /* Color suave cuando pasa el mouse */
+  }
+  
+  /* Asegurar que el contenido no se quede debajo de la barra */
+  body {
+    margin-top: 60px; /* Deja espacio para la barra */
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  

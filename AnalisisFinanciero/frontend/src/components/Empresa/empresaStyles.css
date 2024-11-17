@@ -1,0 +1,80 @@
+/* Fondo suave y elegante para la página */
+body {
+    background-color: #f4f7fa;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Estilo del contenedor de formulario */
+  .cuadro-empresa {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo de los campos de entrada */
+  input, select, textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  /* Etiquetas de los campos */
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #888686;
+  }
+
+
+  /* Etiquetas de los campos */
+  label1 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000000;
+  }
+ 
+  /* Botones */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Sombra en los botones */
+  button:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.7);
+  }
+  
+  /* Alineación y espaciado en formularios */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  /* Estilo para el título de la página */
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
